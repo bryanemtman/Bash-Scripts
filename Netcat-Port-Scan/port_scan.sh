@@ -12,6 +12,7 @@ if [[ -z "$ports_file" || -z "$ADDR" ]]; then
     echo "Usage: ${0} <ports_file> <ip_address>"
     exit 1
 fi
+
 if [[ ! -f "$ports_file" ]]; then
     echo "Error: '$ports_file' does not exist."
     exit 1
